@@ -1,0 +1,52 @@
+#author{
+    color: black;  
+    font-size: x-small;
+}
+
+.main-header
+{
+    background-color: #f1f1f1;
+    text-align: left;
+}
+
+.aquabluetext{
+        color: #92bcc6;
+}
+
+p, li{
+    text-align: left;
+    text-indent: 50px;
+    color: grey;
+}
+
+h3 {
+    color: #92bcc6;
+}
+
+article a{
+    color: #92bcc6;
+    font-size: small;
+}
+
+#copyright{
+    color: grey;
+    font-size: x-small;
+    text-align: right;
+}
+
+aside{
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+aside a
+{
+    color: #92bcc6;
+    font-size: small;
+}
+
+.related-author{
+    color: grey;
+    font-size: x-small;
+}
