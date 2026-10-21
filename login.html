@@ -10,44 +10,72 @@
             </nav>
         </header>
         <h1>Inscrição</h1>
-        <p>os campos obrigatórios estão assinalados com «(obrigatório)»</p>
+        <p>Os campos obrigatórios estão assinalados com (obrigatório)</p>
+        <body>           
         <main>
 
             <form action="#" method="post" >
-                <label for="name">Nome *</label><input type="text" id="name" name="name" required autocomplete="name"/>
-                
-                Email: <input type="email" id="email" name="email" required autocomplete="email"/>
 
-                Telemóvel: <input type="tel" id="phone" name="phone" autocomplete="tel"/>
-
-                <select id="course" name="course" required>
-                    <option value="">Escolhe o teu curso</option>
-                    <option value="curso1">Curso 1</option>
-                    <option value="curso2">Curso 2</option>
-                    <option value="curso3">Curso 3</option>
-                    <option value="curso4">Curso 4</option>
-                </select>
-
-                
-
-            <!-- TODO 7: Ano. Um fieldset com legend «Ano» e 3 botões de rádio
-                (1.º, 2.º, 3.º) com o mesmo name. Cada rádio tem o seu label. -->
-
-            <!-- TODO 8: Interesses. Um fieldset com legend e pelo menos 4 caixas de
-                verificação (retrato, paisagem, rua, edição, ...). -->
-
-            <!-- TODO 9: textarea «Porque queres entrar no clube?», com um texto de
-                ajuda ligado por aria-describedby. -->
-
-            <!-- TODO 10: caixa de verificação de consentimento obrigatória:
-                «Autorizo o uso dos meus dados apenas para gerir a inscrição». -->
-
-            <!-- TODO 11: botão de envio (button type="submit") com texto claro. -->
-
+            <!--Todo 3-->
+            <label for="nome">Nome (obrigatório)</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required/>
+            <!--Todo 4-->
+            <label for="email">Email (obrigatório)</label>
+            <input type="email" id="email" name="email" autocomplete="email" required/>
+            <!--Todo 5-->
+            <label for="tel">Telemóvel</label>
+            <input type="tel" id="tel" name="email" autocomplete="tel" />
+            <!--Todo 6-->
+            <label for="curso">Curso</label>
+            <select id="curso" name="curso" required>
+                <option value="">Escolhe o teu curso</option>
+                <option value="curso1">Curso 1</option>
+                <option value="curso2">Curso 2</option>
+                <option value="curso3">Curso 3</option>
+                <option value="curso4">Curso 4</option>
+            </select>
+            <!--Todo 7-->
+            <fieldset>
+                <legend>Ano</legend>          
+                <input type="radio" id="ano1" name="ano" value="1">
+                <label for="ano1">1.º</label>
+                <br/>
+                <input type="radio" id="ano2" name="ano" value="2">
+                <label for="ano2">2.º</label>
+                <br/>
+                <input type="radio" id="ano3" name="ano" value="3">
+                <label for="ano3">3.º</label> 
+            </fieldset>
+            <!--Todo 8-->
+            <fieldset>
+                <legend>Interesses</legend>
+                <input type="checkbox" id="interesse1" name="interesses" value="retrato">
+                <label for="interesse1">Retrato</label>
+                <br/>
+                <input type="checkbox" id="interesse2" name="interesses" value="paisagem">
+                <label for="interesse2">Paisagem</label>
+                <br/>
+                <input type="checkbox" id="interesse3" name="interesses" value="rua">
+                <label for="interesse3">Rua</label>
+                <br/>
+                <input type="checkbox" id="interesse4" name="interesses" value="edicao">
+                <label for="interesse4">Edição</label>
+            </fieldset>
+            <!--Todo 9-->
+            <textarea id="porque" name="porque" aria-describedby="ajuda" placeholder="Porque queres entrar no clube?"></textarea>
+            <!--Todo 10-->
+            <input type="checkbox" id="consentimento" name="consentimento" required>
+            <label for="consentimento">Autorizo o uso dos meus dados apenas para gerir a inscrição</label>
+            <!--Todo 11-->
+            <button type="submit">Enviar Inscrição</button>
             </form>
         </main>
 
-        <!-- TODO 12: rodapé (footer) com o contacto do clube. -->
+  <!-- TODO 12 -->
+<footer>
+    <p>Contacto: <a href="mailto:elbteles@hotmail.com">Enviar contacto</a></p>
+</footer>
 
-    </body>
+
+</body>
 </html>
