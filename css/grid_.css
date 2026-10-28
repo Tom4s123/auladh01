@@ -3,16 +3,42 @@ img{
     height: 10px;
 }
 
-.card{
-    width: 350px;
-    height: 250px;
+.card1{
     padding: 50px;
-    border-top: 1px solid green;
+    border: 1px solid green;
     margin: 10px;
+    grid-area: area1;
+}
+.card2{
+    padding: 50px;
+    border: 1px solid green;
+    margin: 10px;
+    grid-area: area2;
+}
+.card3{
+    padding: 50px;
+    border: 1px solid green;
+    margin: 10px;
+    grid-area: area3;
+}
+.card4{
+    padding: 50px;
+    border: 1px solid green;
+    margin: 10px;
+    grid-area: area4;
+}
+.card5{
+    padding: 50px;
+    border: 1px solid green;
+    margin: 10px;
+    grid-area: area5;
 }
 
 main{
     display: grid;
-    grid: auto auto / auto auto;
-
+    grid-template-areas:
+    "area1 area2 area2"
+    "area1 area3 area4"
+    "area5 area5 area5"
+                           
 }
