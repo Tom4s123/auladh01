@@ -3,6 +3,16 @@
 <head>
     <link rel="stylesheet" href="https://unpkg.com/open-props" />    
     <style>
+    @media screen and (min-width:700px) {
+    body {
+        
+        background-color: var(--blue-5);
+        color: var(--text-1);
+        margin: 0;
+        padding: 0;
+    }
+    }
+    @media screen and (max-width:700px) and (orientation: portrait) {
     .card {
         border: solid var(--border-size-5);
         background-color: var(--surface-6);
@@ -14,6 +24,7 @@
         margin-bottom: 20px;
         margin-right: 20px;
     }
+    }
     .openpropsfont{
         font-family: var(--font-antique);
         font-size: var(--font-size-3);
@@ -23,17 +34,40 @@
         display: flex;
         flex-direction: row;
     }
+    @media screen and (max-width:600px){
+    .card-cointainer-column{
+        display: flex;
+        flex-direction: column;
+    }
+    }
     .footer{
         background-color: var(--surface-3);
         padding: var(--size-2);
         text-align: center;
         margin-top: var(--size-7);
     }
+    /*
+    @media screen and (max-width:500px){
+    .sidebar{
+        border: solid var(--border-size-3);
+        background-color: var(--surface-6);
+        background-color: var(--surface-2);
+        padding: var(--size-2);
+        width: 200px;
+        display: none;
+    }
+    }
+    @media screen and (min-width:500px){
+    .toogle-button{
+        display: none;
+    }
+    }
+    */
     </style>
 </head>
 <body>
     <h1>Titulo da nossa pagina</h1>
-    <div class="card-cointainer"> 
+    <div class="card-cointainer card-cointainer-column"> 
         <div class="card">
             <h2>Card Title</h2>
             <p>This is a simple card component using open props.</p>
