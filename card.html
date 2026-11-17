@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/open-props" />    
+    <style>
+    .card {
+        border: solid var(--border-size-5);
+        background-color: var(--surface-6);
+        padding: var(--size-2);
+        box-shadow: var(--shadow-4);
+        max-width: 400px;
+        margin-left: var(--size-px-4);
+        margin-top: var(--size-px-4);
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    .openpropsfont{
+        font-family: var(--font-antique);
+        font-size: var(--font-size-3);
+        color: var(--text-1);
+    }
+    .card-cointainer{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer{
+        background-color: var(--surface-3);
+        padding: var(--size-2);
+        text-align: center;
+        margin-top: var(--size-7);
+    }
+    </style>
+</head>
+<body>
+    <h1>Titulo da nossa pagina</h1>
+    <div class="card-cointainer"> 
+        <div class="card">
+            <h2>Card Title</h2>
+            <p>This is a simple card component using open props.</p>
+        </div>
+        <div class="card">
+            <h2>Second Card</h2>
+            <p>This is another card component with the same styling.</p>
+        </div>
+        <div class="card">
+            <h2>Third Card</h2>
+            <p>This is the third card component, demonstrating the use of open props for consistent styling.</p>
+        </div>
+
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </div>
+</body>
+</html>
+    
