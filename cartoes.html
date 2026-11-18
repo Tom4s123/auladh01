@@ -1,0 +1,224 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap" rel="stylesheet">
+
+    <title>Recomendações</title>
+</head>
+<style>
+.card{
+    padding: 2rem;
+    border-radius: 0.5rem;
+    font-family: "Barlow";
+    font-weight: 500;
+    color: white;
+    background-color: grey;
+    margin:3px;
+}
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 1.2rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    opacity: 0.5;
+}
+
+.card-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid 3px rgba(255, 255, 255, 0.5);
+}
+.card-header{
+    display:flex;
+    padding-bottom:1.5rem
+}
+.card-header__text{
+    padding-left:1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-header__name{
+    font-weight: 600;
+}
+.card-header__job{
+    font-size: 0.75rem;
+    opacity: 0.5;
+}
+.card-title{
+    font-size: 1.2rem;
+}
+.card{
+    padding: 2rem;
+    border-radius: .5rem;
+    font-family: 'Barlow';
+    font-weight: 500;
+    color: white;
+    background-color: grey;
+    margin:3px;
+}
+.card1{
+    color: white;
+    background-color: rgb(246, 0, 192);
+    grid-area: c1;
+}
+.card2{
+    color: white;
+    background-color: grey;
+    grid-area: c2;
+}
+.card3{
+    color: grey;
+    border:solid 1px grey;
+    background-color: white;
+    grid-area: c3;
+}
+.card4{
+    color: grey;
+    border:solid 1px grey;
+    background-color: blue;
+    grid_area: c4;
+}
+.card5{
+    color: white;
+    background-color: black;
+    grid-area: c5;
+}
+@container (width < 400px){
+    .card header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-img{
+        width: 60px;
+        height: 60px;
+    }
+    .card-title{
+        font-size: 0.9rem;
+        font-weight: 500;
+        opacity: 0.8;
+        line-height: 1;
+    }
+}
+.container{
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "c1 c1 c2 c3"
+        "c4 c5 c5 c3";
+}
+</style>
+<body>
+    <div class="container">
+        <div class="cards">
+
+            <!-- Card 1 -->
+            <div class="card card1">
+                <div class="card-header">
+                    <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFyNZWYxiZjNAUgn15tvlhU3Y99fBcDboGhFjVzixpoA&s=10" alt="">
+                    <div class="card-header-text">
+                        <div class="card-name">Daniel Oliveira</div>
+                        <div class="card-role">Verified Graduate</div>
+                    </div>
+                </div>
+
+                <div class="card-title">
+                    I received a job offer mid-course, and the subjects I learned were current, if not more so, in...
+                </div>
+
+                <section class="card-text">
+                    I was an intern for many years before I joined the bootcamp. I've been looking to make a transition...
+                </section>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card card2">
+                <div class="card-header">
+                    <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT96N5MZIKxiiLFi7EhpBq5SubMsq9aIGA9dCOcmpQfvw&s=10" alt="">
+                    <div class="card-header-text">
+                        <div class="card-name">Jonathan Walters</div>
+                        <div class="card-role">Verified Graduate</div>
+                    </div>
+                </div>
+
+                <div class="card-title">
+                    The team was very supportive and kept me motivated
+                </div>
+
+                <section class="card-text">
+                    I started as a total newbie with virtually no coding skills. Now I work as a mobile engineer for...
+                </section>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card card3">
+                <div class="card-header">
+                    <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk98R3uMa077uTNWJMGy1930s9658-tC_NEEtZO03FLg&s=10" alt="">
+                    <div class="card-header-text">
+                        <div class="card-name">Kira Whittle</div>
+                        <div class="card-role">Verified Graduate</div>
+                    </div>
+                </div>
+
+                <div class="card-title">
+                    Such a life-changing experience. Highly recommended!
+                </div>
+
+                <section class="card-text">
+                    Before joining the bootcamp, I'd never written a line of code. I needed some structure from pe...
+                </section>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card card4">
+                <div class="card-header">
+                    <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG9Uub8NLHta0M60Ad6fHf3UTgIw-xtntQznLaGIOcJw&s=10" alt="">
+                    <div class="card-header-text">
+                        <div class="card-name">Jeanette Harmon</div>
+                        <div class="card-role">Verified Graduate</div>
+                    </div>
+                </div>
+
+                <div class="card-title">
+                    An overall wonderful and rewarding experience
+                </div>
+
+                <section class="card-text">
+                    Thanks for the wonderful experience! Now I have a job I really enjoy, and make a good living...
+                </section>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card card5">
+                <div class="card-header">
+                    <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHrgadxzt5_R9G7s2czQU-alPXmYVKL80Nsgq_TCFfzQ&s=10" alt="">
+                    <div class="card-header-text">
+                        <div class="card-name">Patrick Abrams</div>
+                        <div class="card-role">Verified Graduate</div>
+                    </div>
+                </div>
+
+                <div class="card-title">
+                    Awesome teaching support from TA who did the bootcamp themselves. Getting guidance from the...
+                </div>
+
+                <section class="card-text">
+                    The staff were genuinely concerned about my progress which I find really refreshing. The progr...
+                </section>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
