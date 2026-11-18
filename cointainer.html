@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+        .parent{
+            container-name: mycointainer;
+            container-type: inline-size;
+        } 
+
+        @container mycontainer (width: 500px) {
+            .child{
+                background-color: red;
+                width: 50%;
+                border: 2px maroon;
+            }
+        }
+        p {
+            font-size: 0.2rem;
+        }
+
+        h3{
+            font-size: 0.5rem;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Demo of the @container</h1>
+        <h3>Container Queries</h3>
+        <p>Resize the window to see the effect</p>
+        <div class="parent">
+            <div class="child">
+                <h2>A header</h2>
+                <p> Some.text</p>
+            </div>
+        </div>
+    </body>
+</html>
+
